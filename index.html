@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>scrollr</title>
+</head>
+<body>
+	
+	<script src="/socket.io/socket.io.js"></script>
+	<script>
+	var socket = io.connect('http://142.4.215.62');
+	socket.on('test', function (data) {
+		console.log(data);
+	});
+	</script>
+
+</body>
+</html>

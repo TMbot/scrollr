@@ -1,0 +1,42 @@
+{
+    "name": "scrollr",
+    "preferGlobal": true,
+    "version": "0.0.0",
+    "author": "Doc <dmattt98@gmail.com>",
+    "description": "An embedable chat room for websites in node.js",
+    "contributors": [ 
+        {
+            "name": "Doc",
+            "email": "dmattt98@gmail.com"
+        }
+    ],
+    "bin": {
+
+    },
+    "scripts": {
+
+    },
+    "main": "./lib/http-server",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/dmattt98/scrollr.git"
+    },
+    "keywords": [
+        
+    ],
+    "dependencies" : {
+        "express": "*",
+        "socket.io": "*",
+    },
+    "analyze": false,
+    "devDependencies": {
+
+    },
+    "bundledDependencies": [
+
+    ],  
+    "license": "GPL v2",
+    "engines": {
+        "node": "0.10.25"
+    }
+}
