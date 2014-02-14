@@ -26,7 +26,7 @@
     ],
     "dependencies" : {
         "express": "*",
-        "socket.io": "*",
+        "socket.io": "*"
     },
     "analyze": false,
     "devDependencies": {
