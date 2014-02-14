@@ -5,14 +5,16 @@
 	<title>scrollr</title>
 </head>
 <body>
+
+	<div id="container">
+		<input type="text" name="name" placeholder="Name">
+		<div id="messages"></div>
+		<button type="submit">Send</button>
+		<div id="status">Status: <span>idle</span></div>
+	</div>
 	
 	<script src="/socket.io/socket.io.js"></script>
-	<script>
-	var socket = io.connect('http://142.4.215.62');
-	socket.on('test', function (data) {
-		console.log(data);
-	});
-	</script>
+	<script src="/js/scrollr.js"></script>
 
 </body>
 </html>
