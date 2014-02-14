@@ -8,6 +8,6 @@ app.get('/', function (req, res) {
 	res.sendfile(__dirname + '/index.html');
 });
 
-io.sockets.on('connection', function (socket) {
+io.sockets.on('connection', function (sockt) {
 	socket.emit('test', {"hello": "world"});
 });
