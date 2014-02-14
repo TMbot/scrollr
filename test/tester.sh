@@ -1,3 +1,3 @@
-node app.js
+npm test /root/scrollr/.
 
 exit $?
