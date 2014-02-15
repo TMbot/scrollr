@@ -12,10 +12,10 @@ $(function () {
 		var $body = $('.chat-body');
 		var $expand = $('.chat-expand');
 		if ($body.css('display') === 'none') {
-			$body.slideUp();
+			$body.slideDown();
 			$expand.html('&#9660;');
 		} else {
-			$body.slideDown();
+			$body.slideUp();
 			$expand.html('&#9650;');
 		}
 	});
