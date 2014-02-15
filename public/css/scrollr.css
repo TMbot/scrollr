@@ -2,6 +2,7 @@ body {
 	width: 100%;
 	height: 100%;
 	margin: 0;
+	color: #fafafa;
 }
 
 body,
@@ -10,7 +11,7 @@ input,
 button,
 .chat-messages {
 	font: 13px "Trebuchet MS", sans-serif;
-	background: #fafafa;
+	background: #222;
 }
 
 .chat {
@@ -34,10 +35,6 @@ button,
 	padding: 10px;
 	border-top: 0;
 	border-bottom: 0;
-}
-
-.chat-messages span {
-	color: #bbb;
 }
 
 .chat-name,
@@ -69,7 +66,6 @@ button,
 
 .chat-expand:hover {
 	border-color: #008cba;
-	color: #008cba;
 }
 
 .chat-head {
