@@ -8,13 +8,13 @@
 })(io);
 
 $(function () {
-	$('.chat-messages').mCustomScrollbar();
 	$('.chat-expand').on('click', function (e) {
 		var $body = $('.chat-body');
 		var $expand = $('.chat-expand');
 		if ($body.css('display') === 'none') {
 			$body.slideDown();
 			$expand.html('&#9660;');
+			$('.chat-messages').mCustomScrollbar();
 		} else {
 			$body.slideUp();
 			$expand.html('&#9650;');
