@@ -18,6 +18,7 @@ button,
 	position: absolute;
 	bottom: 0px;
 	right: 28px;
+	transition: margin-bottom 1s ease;
 }
 
 .chat-messages,
