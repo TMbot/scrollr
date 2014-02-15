@@ -1,6 +1,6 @@
 (function (io) {
 
-	var socket = io.connect('http://142.4.215.62:80');
+	var socket = io.connect('http://scrollr.subd.in:80');
 	socket.on('test', function (data) {
 		console.log(data);
 	});
