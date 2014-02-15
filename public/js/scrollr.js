@@ -12,10 +12,10 @@ $(function () {
 		var $chat = $('.chat');
 		var $expand = $('.chat-expand');
 		if ($chat.css('margin-bottom') === '-384px') {
-			$chat.css('margin-bottom', '-384px');
+			$chat.css('margin-bottom', '0');
 			$expand.html('&#9660;');
 		} else {
-			$chat.css('margin-bottom', '0');
+			$chat.css('margin-bottom', '-384px');
 			$expand.html('&#9650;');
 		}
 	});
