@@ -8,6 +8,7 @@
 })(io);
 
 $(function () {
+	$('.chat-messages').mCustomScrollbar();
 	$('.chat-expand').on('click', function (e) {
 		var $body = $('.chat-body');
 		var $expand = $('.chat-expand');
