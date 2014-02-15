@@ -14,7 +14,6 @@ $(function () {
 		if ($body.css('display') === 'none') {
 			$body.slideDown();
 			$expand.html('&#9660;');
-			$('.chat-messages').mCustomScrollbar();
 		} else {
 			$body.slideUp();
 			$expand.html('&#9650;');
