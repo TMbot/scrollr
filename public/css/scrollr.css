@@ -12,6 +12,7 @@ button,
 .chat-messages {
 	font: 13px "Trebuchet MS", sans-serif;
 	background: #222;
+	color: #fafafa;
 }
 
 .chat {
