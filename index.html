@@ -2,19 +2,15 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>scrollr</title>
+	<title>Scrollr</title>
+	<link rel="stylesheet" href="css/scrollr.css">
 </head>
 <body>
-
-	<div id="container">
-		<input type="text" id="name" placeholder="Name">
-		<div id="messages"></div>
-		<button id="submit">Send</button>
-		<div id="status">Status: <span>idle</span></div>
+	<div class="chat">
+		<input type="text" class="chat-name" placeholder="Enter your name">
+		<div class="chat-messages"></div>
+		<textarea placeholder="Type your message"></textarea>
+		<div class="chat-status">Status: <span>Idle</span></div>
 	</div>
-	
-	<script src="/socket.io/socket.io.js"></script>
-	<script src="/js/scrollr.js"></script>
-
 </body>
 </html>
