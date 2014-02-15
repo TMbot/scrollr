@@ -19,6 +19,7 @@ button,
 	bottom: 0px;
 	right: 28px;
 	transition: margin-bottom 1s ease;
+	margin-bottom: -384px;
 }
 
 .chat-messages,
@@ -80,6 +81,10 @@ button,
 
 	display: flex;
 	flex-direction: row;
+}
+
+.chat-body {
+	display: none;
 }
 
 iframe {

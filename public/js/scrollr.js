@@ -9,13 +9,13 @@
 
 $(function () {
 	$('.chat-expand').on('click', function (e) {
-		var $chat = $('.chat');
+		var $body = $('.chat-body');
 		var $expand = $('.chat-expand');
-		if ($chat.css('margin-bottom') === '-384px') {
-			$chat.css('margin-bottom', '0');
+		if ($body.css('display') === 'none') {
+			$body.slideUp();
 			$expand.html('&#9660;');
 		} else {
-			$chat.css('margin-bottom', '-384px');
+			$body.slideDown();
 			$expand.html('&#9650;');
 		}
 	});
