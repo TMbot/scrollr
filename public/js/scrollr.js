@@ -1,8 +1,25 @@
 (function (io) {
 
 	var socket = io.connect('http://scrollr.subd.in:80');
-	socket.on('test', function (data) {
-		console.log(data);
+	socket.on('output', function (data) {
+		if (data.length) {
+			for (var i = 0; i < data.length; i++) {
+
+				$('.chat-message')
+					.append('<span>' + data.name + ':</span> ' + data.message + '<br>');
+
+			}
+		}
+	});
+
+	$('.chat textarea').on('keydown', function (e) {
+		var name = $('.chat-name').val();
+		var self = this;
+
+		if (e.which === 13 && e.shiftKey === false) {
+			socket.emit('input', { "name": name, "message": self.val() });
+			e.preventDefault();
+		}
 	});
 
 })(io);
