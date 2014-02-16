@@ -12,7 +12,7 @@ app.get('/', function (req, res) {
 	res.sendfile(__dirname + '/index.html');
 });
 
-mongo.connect('mongo://127.0.0.1/chat', function (err, db) {
+mongo.connect('mongo://0.0.0.0:27017/chat', function (err, db) {
     if (err) throw err;
 
     client.on('connection', function (socket) {
