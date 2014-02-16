@@ -1,6 +1,6 @@
 (function (io) {
 
-	var socket = io.connect('http://scrollr.subd.in:80');
+	var socket = io.connect('http://scrollr.subd.in');
 	socket.on('output', function (data) {
 		if (data.length) {
 			for (var i = 0; i < data.length; i++) {
